@@ -1,0 +1,30 @@
+.tahoma-5a{
+  font-family: Tahoma;
+  font-weight: bold;
+  font-size: 30px;
+}
+.verdana-5c{
+  font-family: Verdana;
+  font-size: 18px;
+}
+.get-started_button-5c{
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+.title-5c{
+  font-weight: bold;
+  font-size: 20px;
+}
+.subtitle-5c{
+  display: block;
+  color: gray;
+  margin-bottom: 15px;
+}
+.description-5c{
+  display: block;
+  width: 350px;
+}

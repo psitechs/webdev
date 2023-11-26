@@ -1,0 +1,41 @@
+.stretch {
+  background-color: green;
+  color: white;
+  padding: 10px 15px;
+  transition: padding 1s ;
+  border: none;
+  vertical-align: top;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.stretch:hover {  
+  padding: 15px 65px;
+}
+.shadow{
+  background-color: green;
+  color: white;
+  padding: 10px 15px;
+  transition: padding 1s ;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0,.4);
+  border: none;
+  cursor: pointer;
+  vertical-align: top;
+  transition: margin-top 100ms, margin-left 100ms;
+}
+.shadow:active{
+  margin-top: 2px;
+  margin-left: 2px;
+}
+.pagination-buttons{
+  background-color: gainsboro;
+  color: black;
+  border: 1px solid grey ;
+  padding: 10px 25px;
+  border-radius: 10px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.footer{
+  vertical-align: bottom;
+  margin-top: 25px;
+}

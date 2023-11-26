@@ -1,0 +1,19 @@
+p{
+  text-align: center;
+  display: block;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product-name{
+  font-family: 'Montserrat';
+  font-size: 48px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.underlined{
+  text-decoration: underline;
+}

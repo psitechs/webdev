@@ -1,0 +1,42 @@
+.hyperlink {
+  color: blue;
+}
+.hyperlink:hover {
+  color: rgb(0, 179, 255);
+}
+.hyperlink:active {
+  color: red;
+}
+.item-name {
+  font-size: 40px;
+  font-weight: bold;
+}
+.item-price-inventory {
+  font-size: 20px;
+  font-weight: bold;
+  color: green;
+}
+.buy-now-button {
+  background-color: rgb(252, 172, 23);
+  font-size: 15px;
+  width: 130px;
+  height: 30px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+.buy-now-button:hover {
+  background-color: rgb(185, 123, 7);
+}
+.add-to-cart-button {
+  background-color: rgb(246, 211, 16);
+  font-size: 15px;
+  width: 130px;
+  height: 30px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+.add-to-cart-button:hover {
+  opacity: 0.6;
+}

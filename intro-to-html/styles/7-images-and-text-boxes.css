@@ -1,0 +1,17 @@
+.round-square{
+  width: 200px;
+  border-radius: 25px;
+}
+.center-square{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+.circle{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: -85px ;
+  border-radius: 100px;
+}

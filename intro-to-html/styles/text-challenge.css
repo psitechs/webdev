@@ -1,0 +1,85 @@
+/*MacBook Pro styles*/
+p {
+  font-family: Arial;
+  font-weight: bold;
+  text-align: center;
+  width: 1000px;
+}
+button {
+  font-family: Arial;
+  border: none;
+}
+span {
+  margin: 0;
+}
+.buy-button {
+  background-color: rgb(49, 111, 247);
+  border-radius: 25px;
+  color: white;
+  padding: 10px 18px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+.center {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+.left-aligned{
+  display:flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: 0;
+}
+.product-name {
+  font-size: 28px;
+  margin: 0;
+}
+.product-price{
+  display: block;
+  font-weight: normal;
+  font-size: 20px;
+  color: rgb(48, 50, 50);
+  margin-top: 15px;
+  margin-bottom: 15px; 
+}
+.tag-line {
+  font-size: 50px;
+}
+.product-age{
+  color: rgb(238, 158, 10);
+  font-size: 18px;
+}
+/* Yahoo Ticker */
+.grey-text{
+  text-align: left;
+  color: grey;
+  font-size: 14px;
+}
+.after-hours-price{
+  display: block; 
+  text-align: left;
+  color: grey;
+  font-size: 14px;
+}
+.price{
+  display: block;
+  text-align: left;
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 6px;
+
+}
+.movement-today{
+  display: block;
+  color: green;
+  font-size: 14px;
+  text-align: left;
+  margin-bottom: 6px;
+}
+.after-hours-movement{
+  text-align: left;
+  color: red;
+}
