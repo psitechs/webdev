@@ -3,22 +3,33 @@
   <head>
     <title>Youtube.com Clone</title>
     <style>
+      p{
+        width: 300px;
+      }
       .thumbnail {
         width: 300px;
         display: block;
+        object-fit: cover;
       }
       .search-bar {
         font-size: 20px;
         margin-left: 2px;
+        display: block;
+      }
+      .video-preview{
+        display: inline-block;
+        margin-right: 20px;
+        margin-top: 20px;
       }
       
     </style>
   </head>
   <body>
     <input class="search-bar" type="text" placeholder="Search" />
+    <div class="video-preview">
     <img
       class="thumbnail"
-      src="/webdev/youtube-clone/thumbnails/marques-sunda.webp"
+      src="../youtube-clone/thumbnails/marques-sunda.webp"
       alt=""
     />
     <p class="video-title">
@@ -26,5 +37,18 @@
     </p>
     <p class="video-author">Marques Brownlee</p>
     <p class="video-stats">3.4M views · 6 months ago</p>
+  </div>
+  <div class="video-preview">
+    <img
+      class="thumbnail"
+      src="../youtube-clone/thumbnails/thumbnail-2.webp"
+      alt=""
+    />
+    <p class="video-title">
+      Talking Tech and AI with Google CEO Sundar Pichai!
+    </p>
+    <p class="video-author">Marques Brownlee</p>
+    <p class="video-stats">3.4M views · 6 months ago</p>
+  </div>
   </body>
 </html>
