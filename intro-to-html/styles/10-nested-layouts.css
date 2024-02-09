@@ -1,0 +1,27 @@
+.profile-container{
+  width: 1000px;
+  display: inline-block;
+}
+.profile-info{
+  display: inline-block;
+  margin-left: 15px;
+  vertical-align: top;
+
+}
+.profile-picture{
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  object-position: center;
+  text-align: center;
+  vertical-align: middle;
+}
+.profile-subheadings, .profile-name{
+  color: grey;
+  margin-bottom: 5px;
+  margin-top: 2px;
+}
+.profile-name{
+  font-weight: 500;
+  color: black;
+}

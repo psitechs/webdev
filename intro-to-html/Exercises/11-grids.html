@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* 11a. */
+      .grid-11a{
+        display: grid;
+        grid-template-columns: 200px 75px;
+      }
+      /* 11b. */
+      .grid-11b{
+        display: grid;
+        grid-template-columns: 50px 1fr 75px;
+        margin-top: 20px;
+      }
+      /* 11c. */
+      .grid-11c{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        column-gap: 20px;
+        row-gap: 10px;
+        margin-top: 20px;
+      }
+      .grid-11d{
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-11a">
+      <div style="background-color: lightblue;"> 200px</div>
+      <div style="background-color: lightpink;"> 75px</div>
+    </div>
+    <div class="grid-11b">
+      <div style="background-color: lightblue;"> col1</div>
+      <div style="background-color: lightpink;"> col2</div>
+      <div style="background-color: lightblue;"> col3</div>
+     </div>
+    <div class="grid-11c">
+      <div style="background-color: lightpink;"> col1</div>
+      <div style="background-color: lightpink;"> col2</div>
+      <div style="background-color: lightpink;"> col3</div>
+      <div style="background-color: lightpink;"> col4</div>
+      <div style="background-color: lightpink;"> col1</div>
+      <div style="background-color: lightpink;"> col2</div>
+      <div style="background-color: lightpink;"> col3</div>
+      <div style="background-color: lightpink;"> col4</div>
+    </div>
+  </body>
+</html>

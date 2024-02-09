@@ -2,53 +2,329 @@
 <html>
   <head>
     <title>Youtube.com Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
-      p{
-        width: 300px;
-      }
-      .thumbnail {
-        width: 300px;
-        display: block;
-        object-fit: cover;
+      p {
+        font-family: Roboto, Arial;
+        margin-top: 0;
+        margin-bottom: 0;
       }
       .search-bar {
         font-size: 20px;
         margin-left: 2px;
         display: block;
       }
-      .video-preview{
-        display: inline-block;
-        margin-right: 20px;
-        margin-top: 20px;
+      .video-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 40px;
       }
-      
+      .channel-info-grid {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        margin-top: 10px;
+      }
+      .thumbnail {
+        width: 100%;
+      }
+      .video-author,
+      .video-stats {
+        font-family: Roboto, Arial;
+        color: rgb(96, 96, 96);
+        font-size: 12px;
+        margin-bottom: 0px;
+        margin-top: 0;
+      }
+      .video-author {
+        margin-bottom: 4px;
+      }
+      .video-title {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 15px;
+        margin-bottom: 12px;
+      }
+      .video-stats {
+        font-size: 12px;
+      }
+      .profile-picture {
+        width: 40px;
+        border-radius: 50px;
+      }
     </style>
   </head>
   <body>
     <input class="search-bar" type="text" placeholder="Search" />
-    <div class="video-preview">
-    <img
-      class="thumbnail"
-      src="../youtube-clone/thumbnails/marques-sunda.webp"
-      alt=""
-    />
-    <p class="video-title">
-      Talking Tech and AI with Google CEO Sundar Pichai!
-    </p>
-    <p class="video-author">Marques Brownlee</p>
-    <p class="video-stats">3.4M views · 6 months ago</p>
-  </div>
-  <div class="video-preview">
-    <img
-      class="thumbnail"
-      src="../youtube-clone/thumbnails/thumbnail-2.webp"
-      alt=""
-    />
-    <p class="video-title">
-      Talking Tech and AI with Google CEO Sundar Pichai!
-    </p>
-    <p class="video-author">Marques Brownlee</p>
-    <p class="video-stats">3.4M views · 6 months ago</p>
-  </div>
+    <div class="video-grid">
+      <div>
+        <img
+          class="thumbnail"
+          src="../youtube-clone/thumbnails/thumbnail-1.webp"
+        />
+        <div class="channel-info-grid">
+          <div>
+            <img
+              class="profile-picture"
+              src="/youtube-clone/channel-pictures/channel-1.jpeg"
+              alt=""
+            />
+          </div>
+          <div>
+            <p class="video-title">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p class="video-author">Marques Brownlee</p>
+            <p class="video-stats">3.4M views · 6 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img
+          class="thumbnail"
+          src="../youtube-clone/thumbnails/thumbnail-2.webp"
+          alt=""
+        />
+        <div class="channel-info-grid">
+          <div>
+            <img
+              class="profile-picture"
+              src="../youtube-clone/channel-pictures/channel-2.jpeg"
+              alt=""
+            />
+          </div>
+          <div>
+            <p class="video-title">Try Not To Laugh Challenge #9 !</p>
+            <p class="video-author">Markiplier</p>
+            <p class="video-stats">19M views · 4 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img
+          class="thumbnail"
+          src="../youtube-clone/thumbnails/thumbnail-3.webp"
+        />
+        <div class="channel-info-grid">
+          <div>
+            <img
+              class="profile-picture"
+              src="/youtube-clone/channel-pictures/channel-3.jpeg"
+              alt=""
+            />
+          </div>
+          <div>
+            <p class="video-title">
+              Crazy Tik Toks Taken Moments Before DISASTER
+            </p>
+            <p class="video-author">SSSniperWolf</p>
+            <p class="video-stats">12M views · 1 year ago</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img
+          class="thumbnail"
+          src="../youtube-clone/thumbnails/thumbnail-4.webp"
+          alt=""
+        />
+        <div class="channel-info-grid">
+          <div>
+            <img
+              class="profile-picture"
+              src="../youtube-clone/channel-pictures/channel-4.jpeg"
+              alt=""
+            />
+          </div>
+          <div>
+            <p class="video-title">
+              The Simplest Math Problem No One Can Solve - Collatz Conjecture
+            </p>
+            <p class="video-author">Veritasium</p>
+            <p class="video-stats">18M views · 4 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img
+          class="thumbnail"
+          src="../youtube-clone/thumbnails/thumbnail-5.webp"
+        />
+        <div class="channel-info-grid">
+          <div>
+            <img
+              class="profile-picture"
+              src="/youtube-clone/channel-pictures/channel-5.jpeg"
+              alt=""
+            />
+          </div>
+          <div>
+            <p class="video-title">
+              Kadane's Algorithm to Maximum Sum Subarray Problem
+            </p>
+            <p class="video-author">CS Dojo</p>
+            <p class="video-stats">519K views · 5 years ago</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img
+          class="thumbnail"
+          src="../youtube-clone/thumbnails/thumbnail-6.webp"
+          alt=""
+        />
+        <div class="channel-info-grid">
+          <div>
+            <img
+              class="profile-picture"
+              src="../youtube-clone/channel-pictures/channel-6.jpeg"
+              alt=""
+            />
+          </div>
+          <div>
+            <p class="video-title">
+              Anything You Can Fit In The Circle I’ll Pay For
+            </p>
+            <p class="video-author">MrBeast</p>
+            <p class="video-stats">141M views · 1 year ago</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img
+          class="thumbnail"
+          src="../youtube-clone/thumbnails/thumbnail-7.webp"
+        />
+        <div class="channel-info-grid">
+          <div>
+            <img
+              class="profile-picture"
+              src="/youtube-clone/channel-pictures/channel-7.jpeg"
+              alt=""
+            />
+          </div>
+          <div>
+            <p class="video-title">Why Planes Don't Fly Over Tibet</p>
+            <p class="video-author">RealLifeLore</p>
+            <p class="video-stats">6.6M views · 1 year ago</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img
+          class="thumbnail"
+          src="../youtube-clone/thumbnails/thumbnail-8.webp"
+          alt=""
+        />
+        <div class="channel-info-grid">
+          <div>
+            <img
+              class="profile-picture"
+              src="../youtube-clone/channel-pictures/channel-8.jpeg"
+              alt=""
+            />
+          </div>
+          <div>
+            <p class="video-title">
+              Inside The World's Biggest Passenger Plane
+            </p>
+            <p class="video-author">Tech Vision</p>
+            <p class="video-stats">3.7M views · 10 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img
+          class="thumbnail"
+          src="../youtube-clone/thumbnails/thumbnail-9.webp"
+        />
+        <div class="channel-info-grid">
+          <div>
+            <img
+              class="profile-picture"
+              src="/youtube-clone/channel-pictures/channel-9.jpeg"
+              alt=""
+            />
+          </div>
+          <div>
+            <p class="video-title">The SECRET to Super Human STRENGTH</p>
+            <p class="video-author">ThenX</p>
+            <p class="video-stats">20M views · 3 year ago</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img
+          class="thumbnail"
+          src="../youtube-clone/thumbnails/thumbnail-10.webp"
+        />
+        <div class="channel-info-grid">
+          <div>
+            <img
+              class="profile-picture"
+              src="/youtube-clone/channel-pictures/channel-10.jpeg"
+              alt=""
+            />
+          </div>
+          <div>
+            <p class="video-title">
+              How The World's Largest Cruise Ship Makes 30,000 Meals Every Day
+            </p>
+            <p class="video-author">Business Insider</p>
+            <p class="video-stats">14M views · 1 year ago</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img
+          class="thumbnail"
+          src="../youtube-clone/thumbnails/thumbnail-11.webp"
+          alt=""
+        />
+        <div class="channel-info-grid">
+          <div>
+            <img
+              class="profile-picture"
+              src="../youtube-clone/channel-pictures/channel-11.jpeg"
+              alt=""
+            />
+          </div>
+          <div>
+            <p class="video-title">
+              Dubai's Crazy Underwater Train and Other Things #Only in Dubai
+            </p>
+            <p class="video-author">Destination Tips</p>
+            <p class="video-stats">3M views · 1 year ago</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img
+          class="thumbnail"
+          src="../youtube-clone/thumbnails/thumbnail-12.webp"
+        />
+        <div class="channel-info-grid">
+          <div>
+            <img
+              class="profile-picture"
+              src="/youtube-clone/channel-pictures/channel-12.jpeg"
+              alt=""
+            />
+          </div>
+          <div>
+            <p class="video-title">
+              What would happen if you didn’t drink water? - Mia Nacamulli
+            </p>
+            <p class="video-author">TED-Ed</p>
+            <p class="video-stats">12M views · 5 years ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
