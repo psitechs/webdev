@@ -1,0 +1,70 @@
+/* 11a. */
+.grid-11a{
+  display: grid;
+  grid-template-columns: 200px 75px;
+}
+/* 11b. */
+.grid-11b{
+  display: grid;
+  grid-template-columns: 50px 1fr 75px;
+  margin-top: 20px;
+}
+/* 11c. */
+.grid-11c{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  column-gap: 20px;
+  row-gap: 10px;
+  margin-top: 20px;
+}
+
+/* 11d. From Exercise 9 */
+.add-friend-gallery{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 20px;
+  width: 800px;
+}
+.add-friend-container{
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.40);
+  height: 350px;
+  width: 175px;
+}
+
+.mutual-friend-container{
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 5px;
+}
+.add-friend-profile-pic, .mutual-friend-profile-pic{
+  height: 70%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.mutual-friend-profile-pic{
+  height: 25px;
+  width: 25px;
+  border-radius: 50px;
+  vertical-align: middle;
+}
+.mutual-friend-count{
+  color: grey;
+  font-size: 13px;
+  margin: 5px;
+  margin-top: 3px;
+  display: inline;
+}
+.add-friend-button {
+  background-color: rgb(43, 126, 215);
+  color: white;
+  border: solid rgb(43, 126, 215);
+  padding: 5px 13px;
+  border-radius: 3px;
+  margin-top: 4px;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+}

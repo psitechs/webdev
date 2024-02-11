@@ -1,0 +1,73 @@
+/* 12a. */
+.flex-12a{
+  display: flex;
+  margin-bottom: 30px;
+}
+.flex-12a-200{
+  width: 200px;
+  background-color: lightblue;
+}
+.flex-12a-75{
+  width: 75px;
+  background-color: lightpink;
+}
+/* 12b. */
+.flex-12b{
+  display: flex;
+  margin-top: 30px;
+}
+.flex-12b-50{
+  width: 50px;
+  background-color: lightblue;
+}.flex-12b-flex1{
+  flex:1;
+  background-color: lightpink;
+}
+.flex-12b-75{
+  width: 75px;
+  background-color: lightblue;
+}
+/* 12c. */
+.flex-12c{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.flex-12c-spread{
+  width: 100px;
+  background-color: lightpink;
+}
+/* 12d. */
+.flex-12d{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 1px grey;
+  height: 50px;
+  margin-top: 30px;
+}
+.flex-12d-spread{
+  width: 100px;
+  background-color: lightpink;
+}
+/* 12e. */
+.flex-12e{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+  border: solid 1px lightgrey;
+  border-radius: 10px;
+  width: 350px;
+}
+.flex-12e-category{
+
+}
+.flex-12e-count{
+  color: white;
+  width: fit-content;
+  padding: 2px 8px;
+  background-color: blue;
+  border-color: blue;
+  border-radius: 20px;
+}

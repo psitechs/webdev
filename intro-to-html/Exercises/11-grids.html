@@ -1,30 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      /* 11a. */
-      .grid-11a{
-        display: grid;
-        grid-template-columns: 200px 75px;
-      }
-      /* 11b. */
-      .grid-11b{
-        display: grid;
-        grid-template-columns: 50px 1fr 75px;
-        margin-top: 20px;
-      }
-      /* 11c. */
-      .grid-11c{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr ;
-        column-gap: 20px;
-        row-gap: 10px;
-        margin-top: 20px;
-      }
-      .grid-11d{
-        
-      }
-    </style>
+    <link rel="stylesheet" href="../styles/11-exercises.css">
   </head>
   <body>
     <div class="grid-11a">
@@ -45,6 +22,69 @@
       <div style="background-color: lightpink;"> col2</div>
       <div style="background-color: lightpink;"> col3</div>
       <div style="background-color: lightpink;"> col4</div>
-    </div>
+    </div>      
+      <div class="add-friend-gallery">
+        <div class="add-friend-container">
+          <img
+            class="add-friend-profile-pic"
+            src="/intro-to-html/imgs/Mittens.jpg"
+            alt=""
+          />
+          <p style="font-size: 15px; margin: 5px; margin-bottom: 0px">
+            <strong>Mittens</strong>
+          </p>
+          <div class="mutual-friend-container">
+            <img class="mutual-friend-profile-pic" src="../imgs/Phoebo.jpg" alt="">
+            <p class="mutual-friend-count">2 mutual friends</p>
+          </div>
+          
+          <button class="add-friend-button">Add Friend</button>
+        </div>
+        <div class="add-friend-container">
+          <img
+            class="add-friend-profile-pic"
+            src="/intro-to-html/imgs/Phoebo.jpg"
+            alt=""
+          />
+          <p style="font-size: 15px; margin: 5px; margin-bottom: 5px">
+            <strong>Phoebo</strong>
+          </p>
+          <div class="mutual-friend-container">
+            <img class="mutual-friend-profile-pic" src="../imgs/Phoebo.jpg" alt="">
+            <p class="mutual-friend-count">2 mutual friends</p>
+          </div>
+          <button class="add-friend-button">Add Friend</button>
+        </div>
+        <div class="add-friend-container">
+          <img
+            class="add-friend-profile-pic"
+            src="/intro-to-html/imgs/Atticus.jpg"
+            alt=""
+          />
+          <p style="font-size: 15px; margin: 5px; margin-bottom: 0px">
+            <strong>Atticus</strong>
+          </p>
+          <div class="mutual-friend-container">
+            <img class="mutual-friend-profile-pic" src="../imgs/Phoebo.jpg" alt="">
+            <p class="mutual-friend-count">4 mutual friends</p>
+          </div>
+          <button class="add-friend-button">Add Friend</button>
+        </div>
+        <div class="add-friend-container">
+          <img
+            class="add-friend-profile-pic"
+            src="/intro-to-html/imgs/Canela.jpg"
+            alt=""
+          />
+          <p style="font-size: 15px; margin: 5px; margin-bottom: 0px">
+            <strong>Canela</strong>
+          </p>
+          <div class="mutual-friend-container">
+            <img class="mutual-friend-profile-pic" src="../imgs/Phoebo.jpg" alt="">
+            <p class="mutual-friend-count">6 mutual friends</p>
+          </div>
+          <button class="add-friend-button">Add Friend</button>
+        </div>
+      </div>
   </body>
 </html>
