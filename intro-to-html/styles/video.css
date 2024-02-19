@@ -1,5 +1,3 @@
-
-
 .video-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -13,6 +11,9 @@
 }
 .thumbnail {
   width: 100%;
+}
+.thumbnail-row{
+  position: relative;
 }
 .video-author,
 .video-stats {
@@ -30,6 +31,17 @@
   font-size: 14px;
   line-height: 15px;
   margin-bottom: 12px;
+}
+.video-time{
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: black;
+  border-radius: 2px;
+  padding: 3px 4px;
+  position: absolute;
+  right: 5px;
+  bottom: 95px
 }
 .video-stats {
   font-size: 12px;

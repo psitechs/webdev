@@ -8,26 +8,86 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../intro-to-html/styles/video.css">
-    <link rel="stylesheet" href="../intro-to-html/styles/header.css">
-    <link rel="stylesheet" href="../intro-to-html/styles/general.css">
+    <link rel="stylesheet" href="../intro-to-html/styles/video.css" />
+    <link rel="stylesheet" href="../intro-to-html/styles/header.css" />
+    <link rel="stylesheet" href="../intro-to-html/styles/general.css" />
+    <link rel="stylesheet" href="../intro-to-html/styles/sidebar.css" />
 
   </head>
   <body>
-    <div class="header"> 
-      <div class="left-section">left</div>
-      <div class="middle-section"><input class="search-bar" type="text" placeholder="Search" /></div>   
-      <div class="right-section">right</div>      
-      
+    <div class="header">
+      <div class="left-section">
+        <img
+          class="hamburger-icon"
+          src="../youtube-clone/icons/hamburger-menu.svg"
+          alt=""
+        />
+        <img
+          class="youtube-logo"
+          src="../youtube-clone/icons/youtube-logo.svg"
+          alt=""
+        />
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search" />
+        <button class="search-button">
+          <img
+            class="search-icon"
+            src="../youtube-clone/icons/search.svg"
+            alt=""
+          />
+        </button>
+        <button class="voice-search-button">
+          <img
+            class="voice-search-icon"
+            src="../youtube-clone/icons/voice-search-icon.svg"
+            alt=""
+          />
+        </button>
+      </div>
+      <div class="right-section">
+        <img
+          class="right-section-icons"
+          src="../youtube-clone/icons/upload.svg"
+          alt=""
+        />
+        <img
+          class="right-section-icons"
+          src="../youtube-clone/icons/youtube-apps.svg"
+          alt=""
+        />
+        <div class="notification-icon-alert-counter">
+          <img
+            class="right-section-icons"
+            src="../youtube-clone/icons/notifications.svg"
+            alt=""
+          />
+        </div>
+        <div class="notification-icon-alert-counter">3</div>
+        <img
+          class="current-user-channel-picture"
+          src="../youtube-clone/channel-pictures/my-channel.jpeg"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="sidebar">
+      <img class="home-icon" src="../youtube-clone/icons/home.svg" alt=""> <p>Home</p>
+      <div  class="sidebar-icon"><img class="home-icon" src="../youtube-clone/icons/explore.svg" alt=""><p>Explore</p></div>
+      <div class="sidebar-icon"><img class="home-icon" src="../youtube-clone/icons/subscriptions.svg" alt=""> <p>Subscriptions</p></div>
+      <div class="sidebar-icon"><img class="home-icon" src="../youtube-clone/icons/originals.svg" alt=""> <p>Originals</p></div>
+      <div class="sidebar-icon"><img class="home-icon" src="../youtube-clone/icons/youtube-music.svg" alt=""> <p>YouTube Music</p></div>
+      <div class="sidebar-icon"><img class="home-icon" src="../youtube-clone/icons/library.svg" alt=""><p>Library</p></div>
     </div>
     <div class="video-grid">
-      <div>
+      <div class="thumbnail-row" >
         <img
           class="thumbnail"
           src="../youtube-clone/thumbnails/thumbnail-1.webp"
-        />
+        >
+        <div class="video-time"> 14:20</div>
         <div class="channel-info-grid">
-          <div>
+          <div class="thumbnail-row"  >
             <img
               class="profile-picture"
               src="/youtube-clone/channel-pictures/channel-1.jpeg"
@@ -43,12 +103,13 @@
           </div>
         </div>
       </div>
-      <div>
+      <div class="thumbnail-row">
         <img
           class="thumbnail"
           src="../youtube-clone/thumbnails/thumbnail-2.webp"
           alt=""
         />
+        <div class="video-time"> 14:20</div>
         <div class="channel-info-grid">
           <div>
             <img
@@ -64,11 +125,12 @@
           </div>
         </div>
       </div>
-      <div>
+      <div class="thumbnail-row">
         <img
           class="thumbnail"
           src="../youtube-clone/thumbnails/thumbnail-3.webp"
         />
+        <div class="video-time"> 14:20</div>
         <div class="channel-info-grid">
           <div>
             <img
@@ -86,12 +148,13 @@
           </div>
         </div>
       </div>
-      <div>
+      <div class="thumbnail-row">
         <img
           class="thumbnail"
           src="../youtube-clone/thumbnails/thumbnail-4.webp"
           alt=""
         />
+        <div class="video-time"> 14:20</div>
         <div class="channel-info-grid">
           <div>
             <img
@@ -109,11 +172,12 @@
           </div>
         </div>
       </div>
-      <div>
+      <div class="thumbnail-row">
         <img
           class="thumbnail"
           src="../youtube-clone/thumbnails/thumbnail-5.webp"
         />
+        <div class="video-time"> 14:20</div>
         <div class="channel-info-grid">
           <div>
             <img
@@ -131,12 +195,13 @@
           </div>
         </div>
       </div>
-      <div>
+      <div class="thumbnail-row">
         <img
           class="thumbnail"
           src="../youtube-clone/thumbnails/thumbnail-6.webp"
           alt=""
         />
+        <div class="video-time"> 14:20</div>
         <div class="channel-info-grid">
           <div>
             <img
@@ -154,11 +219,12 @@
           </div>
         </div>
       </div>
-      <div>
+      <div class="thumbnail-row">
         <img
           class="thumbnail"
           src="../youtube-clone/thumbnails/thumbnail-7.webp"
         />
+        <div class="video-time"> 14:20</div>
         <div class="channel-info-grid">
           <div>
             <img
@@ -174,12 +240,13 @@
           </div>
         </div>
       </div>
-      <div>
+      <div class="thumbnail-row">
         <img
           class="thumbnail"
           src="../youtube-clone/thumbnails/thumbnail-8.webp"
           alt=""
         />
+        <div class="video-time"> 14:20</div>
         <div class="channel-info-grid">
           <div>
             <img
@@ -197,11 +264,12 @@
           </div>
         </div>
       </div>
-      <div>
+      <div class="thumbnail-row">
         <img
           class="thumbnail"
           src="../youtube-clone/thumbnails/thumbnail-9.webp"
         />
+        <div class="video-time"> 13:17</div>
         <div class="channel-info-grid">
           <div>
             <img
@@ -217,11 +285,12 @@
           </div>
         </div>
       </div>
-      <div>
+      <div class="thumbnail-row">
         <img
           class="thumbnail"
           src="../youtube-clone/thumbnails/thumbnail-10.webp"
         />
+        <div class="video-time"> 7:53</div>
         <div class="channel-info-grid">
           <div>
             <img
@@ -230,7 +299,7 @@
               alt=""
             />
           </div>
-          <div>
+          <div class="thumbnail-row">
             <p class="video-title">
               How The World's Largest Cruise Ship Makes 30,000 Meals Every Day
             </p>
@@ -239,12 +308,13 @@
           </div>
         </div>
       </div>
-      <div>
+      <div class="thumbnail-row">
         <img
           class="thumbnail"
           src="../youtube-clone/thumbnails/thumbnail-11.webp"
           alt=""
         />
+        <div class="video-time"> 14:20</div>
         <div class="channel-info-grid">
           <div>
             <img
@@ -262,11 +332,12 @@
           </div>
         </div>
       </div>
-      <div>
+      <div class="thumbnail-row">
         <img
           class="thumbnail"
           src="../youtube-clone/thumbnails/thumbnail-12.webp"
         />
+        <div class="video-time"> 14:20</div>
         <div class="channel-info-grid">
           <div>
             <img

@@ -5,4 +5,7 @@ p {
 }
 body{
   margin: 0;
+  padding-top: 80px;
+  padding-left: 80px;
+  margin-bottom: 1000px;
 }

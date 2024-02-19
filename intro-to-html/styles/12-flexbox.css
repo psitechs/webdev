@@ -53,21 +53,30 @@
 /* 12e. */
 .flex-12e{
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   justify-content: space-between;
+  align-items: center;
   margin-top: 30px;
   border: solid 1px lightgrey;
-  border-radius: 10px;
-  width: 350px;
+  border-radius: 7px;
+  width: 300px;
+  padding: 3px 10px;
+  line-height: 30px;
+  font-size: 15px;
 }
 .flex-12e-category{
+  flex: 0 50%;
+  font-family: Arial, Helvetica, sans-serif;
 
 }
 .flex-12e-count{
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
   width: fit-content;
-  padding: 2px 8px;
-  background-color: blue;
-  border-color: blue;
+  height: fit-content;
+  padding: 4px 9px;
+  background-color: rgb(65, 108, 237);
+  border-color: rgb(65, 108, 237);
   border-radius: 20px;
+  border-width: 0;
 }
