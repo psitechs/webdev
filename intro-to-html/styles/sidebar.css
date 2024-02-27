@@ -5,11 +5,12 @@
   justify-content: space-between;
   position: fixed;
   bottom: 0;
-  top:55px;
+  top:56px;
   left: 0;
   background-color: white;
   width: 72px;
   height: 400px;
+  padding-top: 5px;
   font-size: 10px;
 }
 .home-icon{
@@ -20,4 +21,12 @@
 .sidebar-icon{
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  line-height: 15px;
+  font-size: 10px;
+}
+.sidebar-icon:hover{
+  background-color: lightgray;
 }

@@ -96,12 +96,20 @@ flex-shrink: 0;
 .right-section-icons{
   height: 24px;
 }
+.notification-icon-container{
+  position: relative;
+}
 .notification-icon-alert-counter{
-  background-color: red;
+  font-family: Roboto,Arial;
+  background-color: rgb(217, 8, 8);
   position: absolute;
   color: white;
-  font-size: 12px;
-  height: 10px;
+  text-align: center;
+  font-size: 9px;
+  padding: 2px 5px;
+  border-radius: 10px;
+  right: -4px;
+  top: -3px;
 }
 .current-user-channel-picture{
   height: 32px;
