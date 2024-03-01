@@ -32,6 +32,31 @@
 
       console.log(true || false);
       console.log(!true);
+
+      if (5) {
+        console.log('truthy')
+      }
+      // false 0 '' NaN undefined null are the only falsey values
+      if (0) {
+        console.log('falsey')
+      }
+
+      const cartQuantity = 5;
+
+      if (cartQuantity) {
+        console.log('cart has products');
+      }
+      
+      let variable1;
+      console.log(variable1);
+
+      const variable2 = undefined;
+      console.log(variable2);
+
+      const result = 0 ? 'truthy' : 'falsey';
+      console.log(result)
+
+
     </script>
   </body>
 </html>
