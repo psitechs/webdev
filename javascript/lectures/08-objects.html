@@ -46,6 +46,54 @@
       const jsonString = JSON.stringify(product2)
       console.log(JSON.parse(jsonString));
 
+      //Auto-boxing
+      console.log('hello'.length);
+      console.log('hello'.toUpperCase());
+
+      const object1 = {
+        message : 'hello'
+      };
+
+      const object2 = object1; 
+
+      object1.message = 'Good job.';
+      //Pointing to same object in memory. Reference is the same
+      console.log(object1);
+      console.log(object2);
+
+      const object3 = {
+        message : 'Good job.'
+      };
+
+      console.log (object3 === object1);
+      console.log (object2 === object1);
+
+      const object4 = {
+        message : 'Good job.',
+        price : 799
+      };
+      //const message = object4.message;
+      //Destructuring
+      const { message, price } = object4;
+      console.log(message);
+      console.log(price);
+
+      const object5 = {
+        //message : message,
+        // The below is shorthand for the above. "Shorthand Property"
+        message,
+
+        // method : function function1() {
+        //   console.log ('method');
+        // }
+        // "Shorthand Method" syntax. The above object method declaration is equivalent to the below. The object property name and function name are the same.
+        method(){
+          console.log('method');
+        }
+      };
+
+      object5.method();
+
     </script>
   </body>
 </html>

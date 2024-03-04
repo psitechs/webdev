@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coin Flip</title>
+  </head>
+  <body>
+    <button onclick="playGame('Heads');">Heads</button>
+    <button onclick="playGame('Tails');">Tails</button>
+
+    <script>
+      // 8i. - 8k.
+      let coinFlipScore = JSON.parse(localStorage.getItem("coinFlipScore")) || {wins : 0, losses : 0}
+      function playGame(guess) {
+        const randNum = Math.random();
+        let result = "";
+        randNum < 0.5 ? (result = "Heads") : (result = "Tails");
+        (result === guess) ? (console.log(`You guess ${guess}. Answer is ${result}. Good job!`),coinFlipScore.wins++ ) : (console.log('You lose!'), coinFlipScore.losses++);
+        localStorage.setItem("coinFlipScore", JSON.stringify(coinFlipScore));
+        console.log(coinFlipScore)
+      }       
+    </script>
+  </body>
+</html>
