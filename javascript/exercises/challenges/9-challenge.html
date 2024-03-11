@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Challenge 9</title>
+  </head>
+  <body>
+    <p>orders under $40 = +$10 shipping</p>
+    <p>orders over $40 = Free shipping!</p>
+    <input
+      type="text"
+      placeholder="Cost of order"
+      class="js-cost-input"
+      onkeydown="
+      handleCostKeydown(event)
+    "
+    />
+    <button
+      onclick="
+    calculateTotal();
+    "
+    >
+      Calculate
+    </button>
+    <p class="js-total-cost"></p>
+    <input type="text" class="input-text" onkeyup="updateText();" />
+    <p class="key-up-example"></p>
+
+    <p>
+      <button onclick="updateCalculation(1)">1</button>
+      <button onclick="updateCalculation(2)">2</button>
+      <button onclick="updateCalculation(3)">3</button>
+      <button onclick="calculation = ''; console.log('0')">AC</button>
+    </p>
+    <p>
+      <button onclick="updateCalculation(4)">4</button>
+      <button onclick="updateCalculation(5)">5</button>
+      <button onclick="updateCalculation(6)">6</button>
+      <button onclick="updateCalculation(' + ')">+</button>
+    </p>
+    <p>
+      <button onclick="updateCalculation(7)">7</button>
+      <button onclick="updateCalculation(8)">8</button>
+      <button onclick="updateCalculation(9)">9</button>
+      <button onclick="updateCalculation(' - ')">-</button>
+    </p>
+
+    <p>
+      <button onclick="updateCalculation(0)">0</button>
+      <button onclick="updateCalculation(' * ')">*</button>
+      <button onclick="updateCalculation(' / ')">/</button>
+      <button
+        onclick="calculation = calculation + ' = '; updateCalculation(eval(String(calculation))); "
+      >
+        =
+      </button>
+    </p>
+    <p class="calculation-output"></p>
+    <div>
+      <button onclick="updateCartQuantity(1)">Add to cart</button>
+      <button onclick="updateCartQuantity(2)">+2</button>
+      <button onclick="updateCartQuantity(3)">+3</button>
+      <button onclick="updateCartQuantity(4)">+4</button>
+      <button onclick="updateCartQuantity(5)">+5</button>
+      <button onclick="updateCartQuantity(-1)">Remove from cart</button>
+      <button onclick="updateCartQuantity(-2)">-2</button>
+      <button onclick="updateCartQuantity(-3)">-3</button>
+      <button onclick="resetCart();">Reset Cart</button>
+
+      <p
+        class="cart-quantity"
+        onload="document.querySelector('.cart-quantity').innerHTML = 'Cart Quantity: ' + (JSON.parse(localStorage.getItem('cartQuantity')) || 0);
+  "
+      ></p>
+    </div>
+
+    <script>
+      function handleCostKeydown(event) {
+        if (event.key === "Enter") {
+          calculateTotal();
+        }
+      }
+      function calculateTotal() {
+        const inputElement = document.querySelector(".js-cost-input");
+        let totalCost = Number(inputElement.value) * 100;
+        if (inputElement.value < 40) {
+          totalCost += 1000;
+          totalCost /= 100;
+        }
+        document.querySelector(".js-total-cost").innerHTML = `$${totalCost}`;
+      }
+      function updateText() {
+        document.querySelector(".key-up-example").innerText =
+          document.querySelector(".input-text").value;
+      }
+
+      //Calculator Exercises
+      let calculation = "";
+      function updateCalculation(input = "") {
+        calculation += `${String(input)}`;
+        document.querySelector('.calculation-output').innerText = calculation;
+      }
+
+      //Cart Quantity Exercises
+      let cartQuantity = JSON.parse(localStorage.getItem("cartQuantity")) || 0;
+      document.querySelector(
+        ".cart-quantity"
+      ).innerHTML = `Cart Quantity: ${cartQuantity}`;
+      function updateCartQuantity(updateValue) {
+        if (cartQuantity + updateValue > 10) {
+          alert("The cart is full.");
+          return;
+        } else if (cartQuantity + updateValue < 0) {
+          alert("Not enough items in the cart.");
+          return;
+        }
+        cartQuantity += updateValue;
+        document.querySelector(
+          ".cart-quantity"
+        ).innerHTML = `Cart Quantity: ${cartQuantity}`;
+        localStorage.setItem("cartQuantity", JSON.stringify(cartQuantity));
+      }
+      function resetCart() {
+        cartQuantity = 0;
+        updateCartQuantity(0);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <button>9a</button>
+    <button class="button-9-b">9b</button>
+
+    <button onclick="displayChoice(this)">heads</button>
+    <button onclick="displayChoice(this)">tails</button>
+
+    <p class="results"></p>
+
+    <input type="text" class="name-input" onkeydown="handleNameEnter(event)" >
+    <button onclick="displayName(event)" >Submit</button>
+    <p class="name-statement"></p>
+    <script>
+      //9a
+      console.log(document.querySelector('button'))
+      //9b
+      document.querySelector('.button-9-b').innerHTML='9b done!';
+      //9c
+      function displayChoice(chosenElement){
+        document.querySelector('.results').innerHTML = `You chose: ${chosenElement.textContent}`
+      }
+      //9d
+      function displayName(){
+        let name = document.querySelector('.name-input').value;
+        document.querySelector('.name-statement').innerHTML = `Your name is: ${name}`;
+      }
+      //9e
+      function handleNameEnter(event){
+        if (event.key === 'Enter'){
+          displayName();
+        }
+      }
+
+    </script>
+  </body>
+</html>
