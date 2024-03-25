@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lesson 10</title>
+    <style>
+      .togglable-button {
+        font-size: 15px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 7px;
+        padding: 12px 20px;
+        cursor: pointer;
+      }
+      .is-toggled {
+        color: black;
+        background-color: rgb(230, 230, 230);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 10d. 10e.-->
+      <button
+        class="togglable-button js-button"
+        onclick="if (!document.querySelector('.js-button').classList.contains('is-toggled')){
+            document.querySelector('.js-button').classList.add('is-toggled');
+          }
+          else {
+            document.querySelector('.js-button').classList.remove('is-toggled')
+          }"
+      >
+        Gaming
+      </button>
+      <button
+        class="togglable-button js-button-1"
+        onclick="if (!document.querySelector('.js-button-1').classList.contains('is-toggled')){
+            document.querySelector('.js-button-1').classList.add('is-toggled');
+          }
+          else {
+            document.querySelector('.js-button').classList.remove('is-toggled')
+            document.querySelector('.js-button-1').classList.remove('is-toggled')
+            document.querySelector('.js-button-2').classList.remove('is-toggled')
+
+          }"
+      >
+        Music
+      </button>
+      <button
+        class="togglable-button js-button-2"
+        onclick="if (!document.querySelector('.js-button-2').classList.contains('is-toggled')){
+            document.querySelector('.js-button-2').classList.add('is-toggled');
+          }
+          else {
+            document.querySelector('.js-button-2').classList.remove('is-toggled');
+          }"
+      >
+        Tech
+      </button>
+    <script>
+      console.log(
+        document.querySelector(".js-button-test").classList.contains("js-button-test")
+      );
+    </script>
+  </body>
+</html>
