@@ -20,3 +20,19 @@ const newItems = _.flattenDeep(items);
 console.log(newItems);
 
 console.log('heBGPROPERLY1e');
+
+
+const { readFile } = require ('fs');
+const { log } = require("console");
+
+console.log('started a first task')
+//Check file path!
+readFile('./content/first.txt','utf8',(err,result) => {
+  if (err) {
+    console.log(err)
+    return
+  }
+  console.log(result)
+  console.log('Completed first task')
+})
+console.log('starting next task')
