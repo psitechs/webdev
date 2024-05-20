@@ -11,9 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    
-  },
-  "devDependencies": {
+    "lodash": "^4.17.21",
     "nodemon": "^3.1.0"
   }
 }

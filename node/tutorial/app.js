@@ -36,3 +36,14 @@ readFile('./content/first.txt','utf8',(err,result) => {
   console.log('Completed first task')
 })
 console.log('starting next task')
+
+const http = require('http')
+
+const server = http.createServer((req,res)=> {
+  console.log('request event');
+  res.end('Hello World')
+})
+
+server.listen(5000, () => {
+  console.log('server listening on port: 5000')
+})
